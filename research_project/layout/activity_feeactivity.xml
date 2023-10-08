@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"> <!-- Center the content vertically -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <!-- TableRow for Column Names -->
+        <TableRow>
+            <!-- Column for Services -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:padding="8dp"
+                android:gravity="center" />
+
+            <!-- Column for Fee Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fee Section"
+                android:padding="8dp"
+                android:gravity="center"
+                android:inputType="number"/>
+        </TableRow>
+
+        <!-- TableRow for Option A -->
+        <TableRow>
+            <!-- Column for Radio Button -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Child Care"
+                    android:checked="true" />
+
+            </RadioGroup>
+
+            <!-- Column for Fee Input -->
+            <EditText
+                android:id="@+id/ID1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Fee"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+
+        <!-- TableRow for Option B -->
+        <TableRow>
+            <!-- Column for Radio Button -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Old Care"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <!-- Column for Fee Input -->
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Fee"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+
+        <!-- TableRow for Option C -->
+        <TableRow>
+            <!-- Column for Radio Button -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dressing"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <!-- Column for Fee Input -->
+            <EditText
+                android:id="@+id/ID3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Fee"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+
+        <!-- TableRow for Option D -->
+        <TableRow>
+            <!-- Column for Radio Button -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Injection"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <!-- Column for Fee Input -->
+            <EditText
+                android:id="@+id/ID4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Fee"
+                android:inputType="number"
+                android:padding="8dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Button for Adding Services -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Services"
+        android:padding="12dp" />
+</LinearLayout>
