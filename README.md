@@ -21,4 +21,4 @@ Follow these steps to install MobileHeart on your mobile device:
 1. Clone this GitHub repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/MobileHeart.git
+   git clone https://github.com/tayyabsal/project.git
